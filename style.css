@@ -1,0 +1,100 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 200px 1fr;
+    height: 100vh;
+}
+
+section {
+    grid-row: span 1;
+    grid-column: span 1;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+#header {
+    background: blue;
+}
+
+#header h1 {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+}
+
+#side-menu {
+    background: #333;
+    grid-row: span 3;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-block {
+    display: block;
+}
+
+#side-menu i {
+    color: #fff;
+    margin: 2px auto 12px;
+}
+
+#side-menu p {
+    color: #f8f18c;
+    margin: 2px auto 12px;
+    display: block;
+}
+
+#side-menu a {
+    color: #888;
+    margin: 6px auto;
+    display: block;
+}
+
+#side-menu a:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+#content {
+    background: #eee;
+    padding: 10px;
+    /* border-bottom: 1px solid #eee; */
+}
+
+#content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#content p {
+    margin: 10px auto;
+    display: block;
+}
+
+input {
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 8px 10px;
+    width: 500px;
+
+}
+
+#output {
+    /* color: red;
+    background: #eee; */
+    width: auto;
+    height: auto;
+}
+
+#output p {
+    margin: 10px auto;
+    display: block;
+}
