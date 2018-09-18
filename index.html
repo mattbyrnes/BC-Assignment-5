@@ -2,68 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Employee Manager</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Employee Manager</title>
 </head>
 
 <body>
 
-    <main>
-        <section id="side-menu">
-            <div class="menu-block">
-                <i class="far fa-address-book fa-2x"></i>
-                <p>Simplicity</p>
-                <!-- Side Menu -->
-                <br />
-                <a id="menu-print"> Print </a>
-                <br />
-                <a id="menu-verify"> Verify </a>
-                <br />
-                <a id="menu-lookup"> Lookup </a>
-                <br />
-                <a id="menu-contains"> Contains </a>
-                <!-- Update> -->
-                <br />
-                <a id="menu-add"> Add </a>
-                <br />
-                <a id="menu-delete"> Delete </a>
-            </div>
-        </section>
+  <main>
+    <section id="side-menu">
+      <div class="menu-block">
+        <i class="far fa-address-book fa-2x"></i>
+        <p>Simplicity</p>
+        <br />
+        <a id="print"> Print </a>
+        <a id="verify"> Verify </a>
+        <a id="lookup"> Lookup </a>
+        <a id="contains"> Contains </a>
+        <a id="update"> Update </a>
+        <a id="add"> Add </a>
+        <a id="delete"> Delete </a>
+      </div>
+    </section>
 
-        <!-- <section id="header">
-            <h1>Employee Manager</h1>
-        </section> -->
-<!-- <section id=""></section> -->
+    <section id="content" class="">
+      <div id="welcome">
+          <h1>Welcome to <hili>Simplicity</hili></h1><br />
+          <p>The Minimalistic Directory</p>
+      </div>
+    </section>
+  </main>
 
-        <section id="content">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 
-            <div id="welcome">
-                <h1>Welcome</h1>
-                <p>Please select an option from the menu.</p>
-            </div>
-
-            <div id="input">
-            </div>
-
-            <div id="output">
-
-            </div>
-            
-        </section>
-
-        
-
-    </main>
-
-    <script src="dom.js"></script>
-    <script src="data.js"></script>
-    <script src="app.js"></script>
 </body>
 
 </html>

@@ -3,9 +3,13 @@ body {
     margin: 0px;
 }
 
+p {
+    line-height: 30px;
+}
+
 main {
     display: grid;
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 200px 1fr;
     height: 100vh;
 }
@@ -15,16 +19,6 @@ section {
     grid-column: span 1;
     padding: 20px 30px;
     box-sizing: border-box;
-}
-
-#header {
-    background: blue;
-}
-
-#header h1 {
-    color: #fff;
-    float: right;
-    font-size: 28px;
 }
 
 #side-menu {
@@ -40,14 +34,20 @@ section {
     display: block;
 }
 
+hili {
+    color: #f8f18c;
+}
+
 #side-menu i {
     color: #fff;
     margin: 2px auto 12px;
+    text-align: center;
+    display: block;
 }
 
 #side-menu p {
     color: #f8f18c;
-    margin: 2px auto 12px;
+    margin: 2px auto 10px;
     display: block;
 }
 
@@ -55,6 +55,7 @@ section {
     color: #888;
     margin: 6px auto;
     display: block;
+    margin-bottom: 20px;
 }
 
 #side-menu a:hover {
@@ -62,39 +63,95 @@ section {
     cursor: pointer;
 }
 
-#content {
-    background: #eee;
-    padding: 10px;
-    /* border-bottom: 1px solid #eee; */
+.fade {
+    background-color:rgba(0, 0, 0, 0.8);
 }
+
+#content {
+    padding: 30px;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    overflow: auto;
+    border: 20px solid #fff;
+    color: #fff;
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+#content::after {
+    content: "";
+    background-image: url(assets/gradient.png) ;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
 
 #content h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    /* color: yellow; */
 }
 
-#content p {
-    margin: 10px auto;
+#welcome {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    overflow: auto;
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+}
+
+#welcome h1 {
+    font-size: 38px;
+    margin: 200px auto 0px;
+    text-transform: uppercase;
+    display: block;
+}
+
+#welcome p {
+    margin: auto;
     display: block;
 }
 
 input {
-    border: 2px solid #ddd;
-    border-radius: 20px;
+    border: 0px solid #ddd;
+    border-radius: 6px;
     font-size: 16px;
     padding: 8px 10px;
-    width: 500px;
-
+    width: 300px;
+    margin-bottom: 20px;
 }
 
-#output {
-    /* color: red;
-    background: #eee; */
+#inputCon {
+    margin-bottom: 20px;
+}
+
+#outputCon {
+    min-height: 200px;
+    display: block;
     width: auto;
     height: auto;
+}
+
+#headerCon {
+    margin-bottom: 20px;
 }
 
 #output p {
     margin: 10px auto;
     display: block;
+}
+
+#button {
+    font-size: .9em;
+    background: #333;
+    border-radius: 20px;
+    border: 0px;
+    padding: 12px;
+    color: #fff;
+    font-size: 18px;
 }
